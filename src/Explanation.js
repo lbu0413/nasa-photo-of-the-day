@@ -1,14 +1,14 @@
 import React from 'react'
 
-function Explanation{
 
+const Explanation = (props) => {
+    const { data } = props;
 
     return(
-        <div></div>
+        <div>{data.explanation}</div>
     )
 }
 
 
 
-
-export default Explanation
+export default Explanation;

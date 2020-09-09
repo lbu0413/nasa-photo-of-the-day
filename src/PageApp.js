@@ -1,5 +1,7 @@
 import React from "react";
 import axios from 'axios';
+import Explanation from "./Explanation"
+import Images from './Images'
 
 const PageApp = (props) => {
     const { data } = props;
@@ -8,8 +10,8 @@ const PageApp = (props) => {
         <div className='PageApp-container'>
             <h1>{data.title}</h1>
             <h3>{data.date}</h3>
-            <Explanation />
-            <div><img src = {data.hdurl}></img></div>
+            <Explanation data={data} />
+            <Images data ={data}/>
         </div>
     )
 }
