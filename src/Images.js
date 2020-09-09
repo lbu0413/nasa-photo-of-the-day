@@ -7,7 +7,7 @@ const Images = (props) => {
     
     return (
         <div>
-            <img src={data.hdurl}></img>
+            <img src={data.hdurl} alt={`${data.title}`}></img>
         </div>
     )
 }
