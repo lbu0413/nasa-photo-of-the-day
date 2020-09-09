@@ -5,11 +5,11 @@ const PageApp = (props) => {
     const { data } = props;
 
     return (
-        <div className='explanation-container'>
+        <div className='PageApp-container'>
             <h1>{data.title}</h1>
             <h3>{data.date}</h3>
-            <div>{data.explanation}</div>
-            <div>{data.hdurl}</div>
+            <Explanation />
+            <div><img src = {data.hdurl}></img></div>
         </div>
     )
 }
