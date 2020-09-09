@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from 'axios';
-import Title from "./Title";
+import Title from "./PageApp";
+import PageApp from "./PageApp";
 
 
 
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Title data={nasaData}  />
+      <PageApp data={nasaData}  />
       <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
