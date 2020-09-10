@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from 'axios';
 import PageApp from "./PageApp";
-import { ThemeProvider } from 'styled-components';
+// import { ThemeProvider } from 'styled-components';
 
 
 
@@ -11,12 +11,12 @@ function App() {
   useEffect(() =>{
 
 
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=U05m7bCeESQnYManr4jbtleXY5Fa3fwSj0redRqf')
       .then(res => {
         setNasaData(res.data);
       })
       .catch(err => { 
-      debugger
+      // debugger
      })
   }, [])
 
