@@ -6,6 +6,11 @@ const StyledExplanation = styled.div`
     width: 80%;
     letter-spacing: 3px;
     line-height: 150%;
+    &:hover{
+        color:white;
+        transition: 0.5s;
+        transform:scale(1.2) 
+    }
 `
 
 

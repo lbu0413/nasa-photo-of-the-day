@@ -21,6 +21,11 @@ const StyledPageApp = styled.div`
         text-align: center;
         width: 100%;
     }
+    .title:hover{
+        color:white;
+        transition: 0.5s;
+        transform:scale(2) 
+    }
     .date{
         display: flex;
         width: 100%;
