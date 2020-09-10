@@ -27,9 +27,18 @@ const StyledPageApp = styled.div`
         margin: 3%;
         flex-direction: row-reverse;
     }
+    &:hover{
+        transition: all .5s ease-in-out;
+        
+
+    }
+ 
 `
 
+
 const PageApp = (props) => {
+   
+   
     const { data } = props;
 
     return (
@@ -37,7 +46,7 @@ const PageApp = (props) => {
             <h1 className="title">{data.title}</h1>
             <div className="date">{data.date}</div>
             <Explanation data={data} />
-            <Images data ={data}/>
+            <Images data={data}/>              
         </StyledPageApp>
     )
 }
